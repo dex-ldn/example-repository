@@ -1,0 +1,35 @@
+table {
+    margin: 2rem;
+    color: lightgrey;
+    width: 100%;
+}
+
+tbody > tr:hover {
+    background: lightblue;
+    color: darkslategray;
+}
+
+tbody > tr {
+    cursor: pointer;
+}
+
+th {
+    padding: .5rem;
+    border-bottom: .5px solid lightgrey;
+    border-left: .5px solid lightgrey;
+}
+
+th:last-child {
+    border-right: 1px solid lightgrey;
+}
+
+td {
+    border-bottom: .5px solid lightgrey;
+    border-left: .5px solid lightgrey;
+    padding: .5rem;
+}
+
+
+td:last-child {
+    border-right: 1px solid lightgrey;
+}

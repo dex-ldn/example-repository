@@ -1,0 +1,16 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    border: 1px solid blanchedalmond;
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+label {
+    color: blanchedalmond;
+}
+
+input {
+    margin-bottom: 2rem;
+}

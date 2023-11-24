@@ -1,0 +1,26 @@
+h1 {
+    color: lightgrey;
+}
+
+label {
+    color: lightgrey;
+    padding: .25rem;
+}
+
+.editComponent {
+    border-left: 1px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.closeIcon {
+    cursor: pointer;
+    color: lightgrey;
+    align-self: flex-end;
+    margin: 0;
+}
+
+.closeIcon:hover {
+    color: grey;
+}

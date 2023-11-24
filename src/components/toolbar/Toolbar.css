@@ -1,0 +1,13 @@
+.toolbar {
+    border-bottom: 1px solid darkslategray;
+    background-color: #128BD1;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
