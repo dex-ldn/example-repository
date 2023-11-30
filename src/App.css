@@ -7,8 +7,6 @@ html, body, #root, .App {
   background-color:#282c34;
   display: grid;
   grid-template-rows: 5rem auto;
-  transition: 2000;
-
 }
 
 .App.unauthenticated {
