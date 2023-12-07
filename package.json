@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@gluestack-style/react": "^1.0.15",
-    "@gluestack-ui/config": "^1.0.3",
-    "@gluestack-ui/themed": "^1.0.13",
     "@tanstack/react-query": "^5.8.4",
     "@tanstack/react-table": "^8.10.7",
     "@testing-library/jest-dom": "^5.14.1",
@@ -13,13 +10,15 @@
     "@testing-library/user-event": "^13.2.1",
     "add": "^2.0.6",
     "axios": "^1.6.1",
+    "bulma": "^0.9.4",
     "react": "^18.2.0",
-    "react-cookie": "^6.1.1",
     "react-dom": "^18.2.0",
     "react-native-svg": "13.4.0",
     "react-native-web": "^0.19.9",
     "react-router-dom": "^6.18.0",
     "react-scripts": "5.0.1",
+    "universal-cookie": "^6.1.1",
+    "uuid": "^9.0.1",
     "web-vitals": "^2.1.0",
     "yarn": "^1.22.21"
   },
@@ -27,7 +26,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ext .ts"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +49,15 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "babel-plugin-react-native-web": "^0.19.9"
+    "@types/uuid": "^9.0.7",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "babel-plugin-react-native-web": "^0.19.9",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
   }
 }

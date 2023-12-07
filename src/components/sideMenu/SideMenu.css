@@ -3,7 +3,7 @@ ul {
     padding: 0;
     padding-top: 1rem;
     margin: 0;
-    border-right: 1px solid lightgrey;
+    border-right: 1px solid #DDE6ED;
 }
 
 .link {
@@ -15,8 +15,8 @@ ul {
 }
 
 .link:hover {
-    color: darkslategray;
-    background: white;
+    color: #526D82;
+    background: #DDE6ED;
 }
 
 .disabled {

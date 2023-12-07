@@ -1,8 +1,8 @@
-form {
+.loginForm {
     display: flex;
     flex-direction: column;
+    border: 1px solid #DDE6ED;
     width: 20rem;
-    border: 1px solid blanchedalmond;
     border-radius: .5rem;
     padding: 2rem;
 }

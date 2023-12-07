@@ -4,11 +4,10 @@ html, body, #root, .App {
 
 .App {
   text-align: center;
-  background-color:#282c34;
+  background-color:#27374D;
   display: grid;
   grid-template-rows: 5rem auto;
-  transition: 2000;
-
+  color: #27374D;
 }
 
 .App.unauthenticated {
@@ -21,6 +20,7 @@ html, body, #root, .App {
 
 .App.authenticated.editing {
   grid-template-columns: 15rem auto 25rem;
+  overflow-y: scroll;
 }
 
 .toolbar {
