@@ -1,12 +1,12 @@
-import { Privacy } from './Privacy';
-import { ExperienceLevel } from './ExperienceLevel';
-import { MuscleGroup } from './MuscleGroup';
+import Privacy from './Privacy';
+import ExperienceLevel from './ExperienceLevel';
+import MuscleGroup from './MuscleGroup';
 
 export type Workout = {
   _id: string;
   name: string;
   info: string;
-  muscleGroups: MuscleGroup;
-  privacy: Privacy;
-  experienceLevel: ExperienceLevel;
+  muscleGroups: MuscleGroup[] | string[];
+  privacy: Privacy | string;
+  experienceLevel: ExperienceLevel | string;
 };

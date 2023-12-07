@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function ViewExercises() {
   return (
-    <div>
-      <h1>ViewExercises</h1>
+    <div className="comingSoon">
+      <h1>Exercises will be added shortly</h1>
     </div>
   );
 }

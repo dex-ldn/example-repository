@@ -1,27 +1,39 @@
-import { useState } from 'react';
-import { Box, Input, InputField, Text } from '@gluestack-ui/themed';
+import { useState, useEffect } from 'react';
 
 export default function FormInput({
   label,
   value,
+  name = '',
+  type = 'text',
+  placeholder = label,
 }: {
   label: string;
   value: string;
+  name?: string;
+  type?: string;
+  placeholder?: string;
 }) {
   const [data, setData] = useState(value);
+
+  useEffect(() => {
+    setData(value);
+  }, [value]);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setData(event.target.value);
   };
 
   return (
-    <Box marginBottom="1rem">
-      <Text color="white" marginBottom=".75rem">
-        {label}
-      </Text>
-      <Input>
-        <InputField value={data} onChange={handleChange} color="white" />
-      </Input>
-    </Box>
+    <div className="field inputWrapper">
+      <label className="label dark">{label}</label>
+      <input
+        value={data}
+        onChange={handleChange}
+        className="input"
+        type={type}
+        name={name}
+        placeholder={placeholder}
+      />
+    </div>
   );
 }

@@ -1,26 +1,89 @@
-h1 {
-    color: lightgrey;
-}
-
-label {
-    color: lightgrey;
-    padding: .25rem;
+.label.dark {
+    color: #DDE6ED;
 }
 
 .editComponent {
-    border-left: 1px solid lightgrey;
+    border-left: 1px solid #DDE6ED;
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
+    color: #DDE6ED;
+    align-items: flex-start;
+}
+
+.editHead {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    font-size: x-large;
+    margin-bottom: 1rem;
 }
 
 .closeIcon {
     cursor: pointer;
-    color: lightgrey;
-    align-self: flex-end;
+    color: #DDE6ED;
     margin: 0;
 }
 
 .closeIcon:hover {
-    color: grey;
+    color: #27374D;
 }
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form {
+    width: 100%;
+}
+
+.formSelect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.formSelect select {
+    width: 100%;
+    cursor: pointer;
+}
+
+.formSelect label {
+    color: #DDE6ED;
+}
+
+.icon.dark {
+    color: white;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.multiSelect {
+    background: #DDE6ED;
+    color: #27374D;
+    padding: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.multiSelect option {
+    padding: .5rem;
+}
+
+.multiSelectLabel {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.submitButton {
+    margin: 2rem;
+}
+
+
+

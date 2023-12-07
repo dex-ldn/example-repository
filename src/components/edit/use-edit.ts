@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { EntityType } from 'src/types/Entity';
+import EntityType from 'src/types/Entity';
 import { Workout } from 'src/types/Workout';
 
 type EditHookType = {
@@ -16,7 +16,7 @@ export default function useEdit(): EditHookType {
   const [editedEntity, setEditedEntity] = useState<Workout | null>(null);
 
   const showEditingPanel = (type: EntityType, editedEntity: Workout) => {
-    setIsEditing(true);
+    if (!isEditing) setIsEditing(true);
     setEditedType(type);
     setEditedEntity(editedEntity);
   };

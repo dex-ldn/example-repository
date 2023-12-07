@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import FormInput from '../edit/FormInput';
 
 import './Login.css';
 import { AuthContext } from '../../context/AuthContext';
@@ -10,7 +11,6 @@ interface FormData extends HTMLFormElement {
 
 export default function LoginForm() {
   const authContext = useContext(AuthContext);
-
   if (!authContext) return;
   const { login } = authContext;
 
@@ -22,12 +22,12 @@ export default function LoginForm() {
   };
 
   return (
-    <form onSubmit={loginUser}>
-      <label htmlFor="email">Email:</label>
-      <input type="text" id="email" name="email" />
-      <label htmlFor="password">Password:</label>
-      <input type="password" id="password" name="password" />
-      <button type="submit">Login</button>
+    <form className="loginForm" onSubmit={loginUser}>
+      <FormInput label="Email" value="" name="email" type="email" />
+      <FormInput label="Password" value="" type="password" name="password" />
+      <button className="button is-medium is-success" type="submit">
+        Login
+      </button>
     </form>
   );
 }

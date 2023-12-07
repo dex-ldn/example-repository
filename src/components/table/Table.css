@@ -1,35 +1,41 @@
 table {
     margin: 2rem;
-    color: lightgrey;
+    color: #DDE6ED;
     width: 100%;
 }
 
+.comingSoon {
+    color: #DDE6ED;
+    font-size: 3rem;
+}
+
 tbody > tr:hover {
-    background: lightblue;
-    color: darkslategray;
+    background: #DDE6ED;
+    color: #27374D;
 }
 
 tbody > tr {
     cursor: pointer;
 }
 
-th {
+table th {
+    color: #DDE6ED;
     padding: .5rem;
-    border-bottom: .5px solid lightgrey;
-    border-left: .5px solid lightgrey;
+    border-bottom: .5px solid #DDE6ED;
+    border-left: .5px solid #DDE6ED;
 }
 
 th:last-child {
-    border-right: 1px solid lightgrey;
+    border-right: 1px solid #DDE6ED;
 }
 
 td {
-    border-bottom: .5px solid lightgrey;
-    border-left: .5px solid lightgrey;
+    border-bottom: .5px solid #DDE6ED;
+    border-left: .5px solid #DDE6ED;
     padding: .5rem;
 }
 
 
 td:last-child {
-    border-right: 1px solid lightgrey;
+    border-right: 1px solid #DDE6ED;
 }

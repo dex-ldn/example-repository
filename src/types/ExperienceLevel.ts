@@ -1,5 +1,7 @@
-export const BEGINNER = 'BEGINNER';
-
-export enum ExperienceLevel {
-  BEGINNER,
+enum ExperienceLevel {
+  BEGINNER = 'beginner',
+  INTERMEDIATE = 'intermediate',
+  ADVANCED = 'advanced',
 }
+
+export default ExperienceLevel;

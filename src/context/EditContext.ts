@@ -1,11 +1,11 @@
 import { createContext } from 'react';
-import { EntityType } from 'src/types/Entity';
+import EntityType from 'src/types/Entity';
 import { Workout } from 'src/types/Workout';
 
 export type EditContextType = {
   isEditing: boolean;
   editedType: EntityType | null;
-  editedEntity: Workout;
+  editedEntity: Workout | null;
   showEditingPanel: (entityType: EntityType, editedEntity: Workout) => void;
   hideEditingPanel: () => void;
 };

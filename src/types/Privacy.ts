@@ -1,7 +1,6 @@
-export const PUBLIC = 'PUBLIC';
-export const PRIVATE = 'PRIVATE';
-
-export enum Privacy {
-  PUBLIC,
-  PRIVATE,
+enum Privacy {
+  PUBLIC = 'public',
+  PRIVATE = 'private',
 }
+
+export default Privacy;

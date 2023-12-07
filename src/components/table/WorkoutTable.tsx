@@ -8,7 +8,7 @@ import {
 
 import TableLayout from './TableLayout';
 import { EditContext } from '../../context/EditContext';
-import { EntityType } from '../../types/Entity';
+import EntityType from '../../types/Entity';
 import { Workout } from '../../types/Workout';
 
 export default function WorkoutTable({ tableData }: { tableData: Workout[] }) {
